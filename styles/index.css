@@ -147,17 +147,19 @@ li:hover {
 
 }
 
+
 @media screen and (min-width: 700px) {
-    .right-sidebar {
-        float: right;
-    }
 
     .left-sidebar {
         float: left;
     }
 }
-
-@media screen and (max-width: 900px) {
+.right-sidebar {
+    clear: both;
+    position: fixed;
+    margin-left: 700px;
+}
+@media screen and (max-width: 1200px) {
     .right-sidebar {
         display: none;
     }
