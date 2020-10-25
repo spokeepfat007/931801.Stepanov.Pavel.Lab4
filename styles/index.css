@@ -70,6 +70,14 @@ main {
 
 .box p {
     margin: 0;
+    line-height: 14px;
+}
+
+.header {
+    width:350px;
+    height:3px;
+    background-color: #edeef0;
+    margin-left: -15px;
 }
 
 .box2 {
