@@ -35,7 +35,6 @@ footer {
 }
 
 main {
-
     max-width: 400px;
     margin: auto;
 }
@@ -61,7 +60,7 @@ main {
     border: #d0d0d0 1px solid;
 }
 
-.box div {
+.box .line {
     background-color: #d0d0d0;
     height: 2px;
     margin-top: 5px;
@@ -74,10 +73,12 @@ main {
 }
 
 .header {
-    width:350px;
-    height:3px;
-    background-color: #edeef0;
+    width: 350px;
+    height: 2px;
+    background-color: #d0d0d0;
     margin-left: -15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 .box2 {
@@ -105,18 +106,14 @@ h4 {
     margin: 0;
 }
 
-.left {
-    float: left;
-    color: #2e5473;
+.comment {
+    display: flex;
+    justify-content: space-between;
 }
 
-.right {
-    float: right;
+.comment p {
+    margin: 0;
     color: #2e5473;
-}
-
-.clear {
-    clear: both;
 }
 
 .box img {
@@ -147,51 +144,26 @@ li:hover {
 
 }
 
-
 @media screen and (min-width: 700px) {
 
     .left-sidebar {
         float: left;
     }
 }
+
 .right-sidebar {
     clear: both;
     position: fixed;
     margin-left: 700px;
 }
+
 @media screen and (max-width: 900px) {
     .right-sidebar {
         display: none;
     }
-
-    .wracked {
-        max-width: 750px;
-        margin: 60px auto 0 auto;
-    }
 }
 
 @media screen and (max-width: 699px) {
-    li:first-child {
-        float: left;
-    }
-
-    li:nth-child(2) {
-        float: left;
-    }
-
-    li:nth-child(3) {
-        float: left;
-    }
-
-    li:nth-child(4) {
-        float: left;
-        clear: both;
-        margin-left: 5px;
-    }
-
-    li:nth-child(5) {
-        float: left;
-    }
 
     .left-sidebar {
         width: 350px;
@@ -207,6 +179,9 @@ li:hover {
 
     ul {
         width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
     }
 
     main {
